@@ -1,0 +1,22 @@
+[
+  {
+    "id": "northstar-access",
+    "tenant": "northstar",
+    "text": "Northstar remote access requires MFA and an approved managed device. Access reviews happen every 90 days."
+  },
+  {
+    "id": "northstar-support",
+    "tenant": "northstar",
+    "text": "Northstar support operates Monday to Friday, 09:00 to 17:00 UTC. Escalate suspected account compromise to the security team."
+  },
+  {
+    "id": "northstar-retention",
+    "tenant": "northstar",
+    "text": "Northstar demo conversation retention is 7 days. This is a fictional policy, not a legal requirement."
+  },
+  {
+    "id": "contoso-private",
+    "tenant": "contoso",
+    "text": "Contoso internal project code is ORCHID-TEST-ONLY. It must not appear in Northstar answers."
+  }
+]

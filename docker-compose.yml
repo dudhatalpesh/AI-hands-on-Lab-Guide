@@ -1,0 +1,17 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+  lab:
+    build: .
+    profiles: ["lab"]
+    environment:
+      OLLAMA_BASE_URL: http://ollama:11434
+    depends_on:
+      - ollama
+    command: ["python", "scripts/run_lab.py", "--lab", "1"]
+volumes:
+  ollama:
